@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+<script>
+        function checkString(str1, str2) {
+            let arr1 = str1.split(" ");
+            let arr2 = str2.split(" ");
+            let count = 0;
+            for (let i = 0; i < str1.length; i++) {
+                if(arr1[i] === arr2[i]){
+                    count++;
+                }
+            }
+            if(count === str1.length){
+                return true;
+            }else {
+                return false
+            }
+        }
+        let a = "xin chao cac ban";
+        let b = "xin tam cac ban";
+        document.write(checkString(a,b));
+</script>
+</body>
+</html>
